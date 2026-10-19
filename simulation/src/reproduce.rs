@@ -149,6 +149,7 @@ pub fn trial_config(args: &ReproduceArgs, rounds: usize, population: usize, seed
         canonical_mode: args.canonical_mode,
         seed: Some(seed),
         llm: LlmSettings {
+            think: None,
             temperature: args.temperature,
             seed: args.llm_seed,
             cache_path: if args.mock {

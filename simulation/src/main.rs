@@ -369,6 +369,7 @@ fn beta_range(min: f64, max: f64, step: f64) -> Vec<f64> {
 /// mock は in-memory キャッシュなので永続保存先を持たない（`cache_path = None`）．
 fn llm_settings(temperature: f32, seed: u64, cache_path: &str, mock: bool) -> LlmSettings {
     LlmSettings {
+        think: None,
         temperature,
         seed,
         cache_path: if mock {
