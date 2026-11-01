@@ -29,7 +29,7 @@ use crate::simulation::SimulationResult;
 /// バイナリ名 (`crsec`) と揃える．
 pub const EXPERIMENT: &str = "crsec";
 /// リポジトリの安定 id．git remote の名前とは独立に固定する．
-pub const REPO_ID: &str = "ren2024";
+pub const REPO_ID: &str = "rep-ren2024";
 /// 分野．網生成・プロフィール割当・活性化順・相手サンプリングがいずれも乱数駆動で
 /// `master_seed` が要るので `simulation`．規範の創出・伝播・評価・遵守は LLM が担うが，
 /// 測っているのはモデルの安全性ではなく社会規範の創発なので `llm-safety` ではない．
@@ -76,7 +76,7 @@ pub fn replication() -> Replication {
             "injunctive-precedes-descriptive",
             "Injunctive norms emerge earlier than descriptive ones (Fact 7)",
         ))
-        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/ren2024/設計書.md")
+        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/rep-ren2024/設計書.md")
 }
 
 // --------------------------------------------------------------------------- //
